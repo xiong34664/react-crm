@@ -12,14 +12,21 @@ code {
     monospace;
 }
 
-:global(.shadow-1px) {
+:global(.shadow-1px) {    /*1px 阴影*/
   box-shadow: 1px 1px 2px 1px rgba(32,37,46,0.1);
 }
-:global(.card ){
+:global(.block) {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 2px;
+}
+:global(.block-title){
+  font-size: 14px;
+}
+:global(.card ){    /*首页卡片*/
   padding: 8px 30px 22px;
   background: #fff;
 }
-
 :global(.card>.card-title) {
   font-size: 12px;
   line-height: 44px;
@@ -30,9 +37,25 @@ code {
   font-weight: bold;
   color: #1756a5;
 }
-:global(.tableStripe:nth-child(even)) {
+
+:global(.tableStripe:nth-child(even)) {   /*table条纹*/
   background: #f5f8ff;
 }
+
+:global(.pagination) {   /*分页样式*/ 
+  padding-top:20px;
+  display:flex;
+  justify-content: flex-end;
+}
+:global(.content) {
+  background: #fff;
+	padding: 20px;
+	flex: auto;
+}
+:global(.content-title) {
+  font-size: 14px;
+}
+
 @media only screen and (max-width: 1300px) {
   body {
       width: 1366px;

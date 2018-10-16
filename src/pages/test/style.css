@@ -1,0 +1,18 @@
+.checkboxList {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkboxList :global(.ant-checkbox-group-item) {
+  padding: 14px 0;
+}
+
+.hidden200 {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+:global(.ant-popover-inner-content) {
+  max-width: 300px;
+}

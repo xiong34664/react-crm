@@ -1,4 +1,7 @@
 @import '~antd/dist/antd.less'; // 引入官方提供的 less 样式入口文件
+
+.btn(){ background-color: #104586;}
+
 @primary-color: #1756a5; // 全局主色
 @white : #fff;
 // @link-color: #1890ff; // 链接色
@@ -38,5 +41,92 @@
   &-dark &-item-group-title,
   &-dark &-item > a {
     color: @white;
+  }
+}
+.ant-transfer {
+  &-operation {
+    .ant-btn {
+      border: none;
+      width: 40px;
+      height: 40px;
+      margin-top: 30px;
+      .anticon {
+        font-size: 20px;
+      }
+      &:hover,&:active,&:focus {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  &-list {
+    border: none;
+    &-header {
+      border: none;
+      .ant-checkbox {
+        display: none;
+      }
+      &-selected {
+        span:first-child {
+          display: none;
+        }
+      }
+      &-title {
+        left: 0;
+      }
+    }
+    &-body {
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      .ant-transfer-list-content {
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        &-item {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+        }
+      }
+
+      .ant-checkbox {
+        display: none;
+        &-checked {
+          display: inline-block;
+          .ant-checkbox-inner {
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+.ant-form-vertical {
+  .ant-form-item {
+    &-label {
+      display: inline-block;
+    }
+    &-required {
+      display: flex;
+      flex-direction: row-reverse;
+      &::before {
+        margin-right: 0;
+        margin-left: 4px;
+        color: @primary-color;
+      }
+    }
+  }
+}
+
+//button
+.ant-btn-primary {
+  &:active {
+    .btn()
+  }
+  &:hover {
+    .btn()
+  }
+  &:focus {
+    .btn()
   }
 }

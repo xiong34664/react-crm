@@ -1,0 +1,6 @@
+.action a{
+  padding: 0 12px;
+}
+.action .del {
+  color: #ec2929;
+}

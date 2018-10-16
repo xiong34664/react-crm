@@ -1,0 +1,71 @@
+
+.config-box {
+	width: 360px;
+	margin-right: 200px;
+	display: inline-block;
+	margin-bottom: 40px;
+}
+.config-box:nth-child(even) {
+	margin-right:	0;
+}
+.config-box .config-title {
+	display: flex;
+	justify-content: space-between;
+	
+}
+.config-box .config-body {
+	margin-top: 8px;
+	border: 1px solid #e6e6e6;
+	border-radius: 2px;
+	height: 150px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.config-box .config-body .config-item {
+	height: 28px;
+	line-height: 28px;
+	margin: 5px 0;
+	font-size: 14px;
+	padding:0 14px;
+	display: flex;
+	justify-content: space-between;
+	color: #000;
+}
+.config-box .config-body .config-item:active {
+	cursor: move;
+}
+.config-box .config-body .config-item i {
+	line-height: 28px;
+	color: #1756a5;
+	display: none;
+	cursor: pointer;
+}
+.config-box .config-body .config-input {
+	padding: 0 4px;
+}
+.config-box .config-body .config-input input {
+	line-height: 28px;
+	padding-left: 10px;
+	margin-top: 4px;
+	background-color: #f6f6f6;
+	font-style: italic;
+	width: 100%;
+	border-radius: 0;
+}
+.config-box .config-body .error input {
+	border: 1px solid #f5222d;
+}
+.config-box .config-body .error input:focus {
+	border-color: #ff4d4f;
+	box-shadow: 0 0 4px 2px rgba(255, 10, 22, 0.2);
+} 
+.config-box .config-body .config-item:hover {
+	background: #eef2fe;
+}
+.config-box .config-body .config-item:hover i {
+	display: inline-block;
+}
+
+:global(.DraggableTags) {
+	height: auto;
+}

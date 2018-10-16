@@ -24,12 +24,14 @@ export default class Bundle extends Component {
         this.setState({
             mod: null
         });
-        //注意这里，使用Promise对象; mod.default导出默认
-        props.load().then((mod) => {
-            this.setState({
-                mod: mod.default ? mod.default : mod
+        if(props.load !== null){
+            //注意这里，使用Promise对象; mod.default导出默认
+            props.load().then((mod) => {
+                this.setState({
+                    mod: mod.default ? mod.default : mod
+                });
             });
-        });
+        }
     }
 
     render() {

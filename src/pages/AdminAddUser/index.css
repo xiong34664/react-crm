@@ -1,0 +1,13 @@
+.block{
+  background: #fff;
+  padding: 20px;
+}
+.block-title{
+  font-size: 14px;
+}
+.block-title-ps{
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 12px;
+  color: #bbb;
+}
